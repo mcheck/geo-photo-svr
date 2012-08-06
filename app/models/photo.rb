@@ -1,5 +1,5 @@
 class Photo < ActiveRecord::Base
-  attr_accessible :lat, :lng
+  attr_accessible :lat, :lng, :image
   
   has_attached_file :image,
                     :styles => { :thumbnail => "100x100#" },
