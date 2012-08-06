@@ -15,10 +15,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: geo-photo-svr_development
+  database: geophotosvr_development
   pool: 5
-  username: geo-photo-svr
-  password: booger
+  username: geophotosvr
+  password: geo-photo-svr
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: geo-photo-svr_test
+  database: geophotosvr_test
   pool: 5
-  username: geo-photo-svr
-  password: booger
+  username: geophotosvr
+  password: geo-photo-svr
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: geo-photo-svr_production
+  database: geophotosvr_production
   pool: 5
-  username: geo-photo-svr
-  password:
+  username: geophotosvr
+  password: geo-photo-svr
