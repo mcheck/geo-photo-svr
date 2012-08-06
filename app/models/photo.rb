@@ -21,7 +21,14 @@ class Photo < ActiveRecord::Base
                     :storage => :s3,
                     :s3_credentials => S3_CREDENTIALS
   
-  COORDINATE_DELTA = 0.5
+  validates :image,
+            :presence => true
+            
+  validates :lat, :lng,
+            :presence => true,
+            :numericality => true
+  
+  COORDINATE_DELTA = 0.05
   
   scope :nearby, lambda { |lat, lng|
     where("lat BETWEEN ? AND ?", lat - COORDINATE_DELTA, lat + COORDINATE_DELTA).
