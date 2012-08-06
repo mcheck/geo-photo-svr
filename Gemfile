@@ -38,3 +38,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'thin'
+gem 'paperclip', '~>2.6.0'
+gem 'aws-sdk', '~>1.3.4'
