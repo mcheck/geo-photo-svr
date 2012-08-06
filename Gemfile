@@ -40,3 +40,7 @@ gem 'jquery-rails'
 gem 'thin'
 gem 'paperclip', '~>2.6.0'
 gem 'aws-sdk', '~>1.3.4'
+
+group :development do
+  gem 'annotate'
+end
